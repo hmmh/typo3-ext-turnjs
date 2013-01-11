@@ -1,4 +1,4 @@
-﻿turn.js 4th release
+turn.js 4th release
 =========
 
 Get the new turn.js on [turnjs.com](http://www.turnjs.com/)

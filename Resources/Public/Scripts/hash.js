@@ -1,4 +1,4 @@
-﻿/**
+/**
  * hash.js
  *
  * Copyright (C) 2012 Emmanuel Garcia

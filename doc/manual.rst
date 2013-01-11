@@ -1,1 +1,1 @@
-﻿Extension icon by http://famfamfam.com/lab/icons/mini/
+Extension icon by http://famfamfam.com/lab/icons/mini/

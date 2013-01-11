@@ -1,4 +1,4 @@
-﻿plugin.tx_turnjs {
+plugin.tx_turnjs {
 	view {
 		templateRootPath = {$plugin.tx_turnjs.view.templateRootPath}
 		partialRootPath = {$plugin.tx_turnjs.view.partialRootPath}

@@ -1,4 +1,4 @@
-﻿## Define custom categories
+## Define custom categories
 # customsubcategory=settings=Settings
 # customsubcategory=paths=Paths
 

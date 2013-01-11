@@ -1,4 +1,4 @@
-﻿turn.js 3rd release
+turn.js 3rd release
 www.turnjs.com
 
 Copyright (c) 2012, Emmanuel Garcia
