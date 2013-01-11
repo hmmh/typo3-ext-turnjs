@@ -1,0 +1,1 @@
+﻿Extension icon by http://famfamfam.com/lab/icons/mini/

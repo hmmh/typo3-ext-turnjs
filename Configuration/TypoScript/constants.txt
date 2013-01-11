@@ -1,0 +1,28 @@
+﻿## Define custom categories
+# customsubcategory=settings=Settings
+# customsubcategory=paths=Paths
+
+plugin.tx_turnjs {
+	view {
+		# cat=plugin.tx_turnjs/paths; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:turnjs/Resources/Private/Templates/
+		# cat=plugin.tx_turnjs/paths; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:turnjs/Resources/Private/Partials/
+		# cat=plugin.tx_turnjs/paths; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:turnjs/Resources/Private/Layouts/
+	}
+
+	settings {
+		# cat=plugin.tx_turnjs/settings; type=int+; label= pageType (for ajax loading)
+		pageType = 2000
+
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include jQuery
+		includeJquery = 1
+
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include turn.js
+		includeTurnjs = 1
+
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include CSS
+		includeCss = 1
+	}
+}

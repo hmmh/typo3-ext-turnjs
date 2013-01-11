@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<main>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:sheet.main</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.flexform.mode>
+						<TCEforms>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.mode</label>
+							<onChange>reload</onChange>
+							<config>
+							<type>select</type>
+							<items>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.mode.0</numIndex>
+									<numIndex index="1">0</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.mode.1</numIndex>
+									<numIndex index="1">1</numIndex>
+								</numIndex>
+							</items>
+							</config>
+						</TCEforms>
+					</settings.flexform.mode>
+					<settings.flexform.selectPages>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.selectPages</label>
+							<displayCond>FIELD:settings.flexform.mode:=:1</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>10</size>
+								<maxitems>100</maxitems>
+								<minitems>2</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</settings.flexform.selectPages>
+					<settings.flexform.startingPoint>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.startingPoint</label>
+							<displayCond>FIELD:settings.flexform.mode:=:0</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+							</config>
+						</TCEforms>
+					</settings.flexform.startingPoint>
+					<settings.flexform.excludeStartingPoint>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.excludeStartingPoint</label>
+							<displayCond>FIELD:settings.flexform.mode:=:0</displayCond>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.flexform.excludeStartingPoint>
+					<settings.flexform.treelevel>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.treelevel</label>
+							<displayCond>FIELD:settings.flexform.mode:=:0</displayCond>
+							<config>
+								<type>input</type>
+								<eval>int</eval>
+								<size>1</size>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.flexform.treelevel>
+				</el>
+			</ROOT>
+		</main>
+		<options>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:sheet.options</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.flexform.options.display>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.display</label>
+							<config>
+								<type>select</type>
+								<items>
+								<numIndex index="0">
+									<numIndex index="0"></numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.double</numIndex>
+									<numIndex index="1">double</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.single</numIndex>
+									<numIndex index="1">single</numIndex>
+								</numIndex>
+							</items>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.display>
+					<settings.flexform.options.width>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.width</label>
+							<config>
+								<type>input</type>
+								<checkbox></checkbox>
+								<eval>trim</eval>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.width>
+					<settings.flexform.options.height>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.height</label>
+							<config>
+								<type>input</type>
+								<checkbox></checkbox>
+								<eval>trim</eval>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.height>
+					<settings.flexform.options.duration>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.duration</label>
+							<config>
+								<type>input</type>
+								<checkbox></checkbox>
+								<eval>trim</eval>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.duration>
+					<settings.flexform.options.elevation>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.elevation</label>
+							<config>
+								<type>input</type>
+								<checkbox></checkbox>
+								<eval>trim</eval>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.elevation>
+					<settings.flexform.options.autoCenter>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.autoCenter</label>
+							<config>
+								<type>select</type>
+								<items>
+								<numIndex index="0">
+									<numIndex index="0"></numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.autoCenter>
+					<settings.flexform.options.gradients>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.gradients</label>
+							<config>
+								<type>select</type>
+								<items>
+								<numIndex index="0">
+									<numIndex index="0"></numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.gradients>
+					<settings.flexform.options.acceleration>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.acceleration</label>
+							<config>
+								<type>select</type>
+								<items>
+								<numIndex index="0">
+									<numIndex index="0"></numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.false</numIndex>
+									<numIndex index="1">false</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.true</numIndex>
+									<numIndex index="1">true</numIndex>
+								</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.acceleration>
+					<settings.flexform.options.turnCorners>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.turnCorners</label>
+							<config>
+								<type>input</type>
+								<checkbox></checkbox>
+								<eval>trim</eval>
+								<size>4</size>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.turnCorners>
+					<settings.flexform.options.direction>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.direction</label>
+							<config>
+								<type>select</type>
+								<items>
+								<numIndex index="0">
+									<numIndex index="0"></numIndex>
+									<numIndex index="1"></numIndex>
+								</numIndex>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.ltr</numIndex>
+									<numIndex index="1">ltr</numIndex>
+								</numIndex>
+								<numIndex index="2">
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.rtl</numIndex>
+									<numIndex index="1">rtl</numIndex>
+								</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.flexform.options.direction>
+				</el>
+			</ROOT>
+		</options>
+	</sheets>
+</T3DataStructure>

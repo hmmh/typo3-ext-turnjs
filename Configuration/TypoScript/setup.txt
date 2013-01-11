@@ -1,0 +1,40 @@
+﻿plugin.tx_turnjs {
+	view {
+		templateRootPath = {$plugin.tx_turnjs.view.templateRootPath}
+		partialRootPath = {$plugin.tx_turnjs.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_turnjs.view.layoutRootPath}
+	}
+	settings {
+		pageType = {$plugin.tx_turnjs.settings.pageType}
+		includeJquery = {$plugin.tx_turnjs.settings.includeJquery}
+		includeTurnjs = {$plugin.tx_turnjs.settings.includeTurnjs}
+		includeCss = {$plugin.tx_turnjs.settings.includeCss}
+	}
+}
+
+// page type for ajax loading
+turnjsPage = PAGE
+turnjsPage {
+	typeNum = {$plugin.tx_turnjs.settings.pageType}
+	config {
+		disableAllHeaderCode = 1
+		xhtml_cleaning = 0
+		admPanel = 0
+		debug = 0
+	}
+	10 < styles.content.get
+}
+
+[globalVar = LIT:1 = {$plugin.tx_turnjs.settings.includeCss}]
+plugin.tx_turnjs._CSS_DEFAULT_STYLE (
+	#txturnjs {
+		width: 800px;
+		height: 600px;
+		background: #fff;
+	}
+	#txturnjs .turn-page {
+		background-size: 100% 100%;
+		background: #fff;
+	}
+)
+[global]

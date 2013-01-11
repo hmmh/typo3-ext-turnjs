@@ -1,0 +1,84 @@
+﻿<div id="txturnjs">
+	<f:for each="{pages1}" as="page" iteration="pageIterator">
+		<div data-url="{f:uri.page(pageUid:page,additionalParams:{type: settings.pageType})}">Loading...</div>
+	</f:for>
+</div>
+
+<script type="text/javascript">
+var urls = {};
+<f:for each="{pages}" as="page" iteration="pageIterator">
+	urls[{pageIterator.cycle}] = '{f:uri.page(pageUid:page,additionalParams:{type: settings.pageType})}';
+</f:for>
+<![CDATA[
+	$(document).ready(function() {
+
+		$("#txturnjs").turn({
+			pages: ]]>{count},
+			<f:for each="{options}" as="value" key="option">
+			{option} : '{value}',
+			</f:for><![CDATA[
+			/*
+			width: 800,
+			height: 600,
+			display: ]]>'{options.display}'<![CDATA[,
+			autoCenter: ]]>{options.autoCenter}<![CDATA[,
+			acceleration: true,
+			direction: 'ltr',
+			duration: 1200,
+			gradients: !$.isTouch,
+			turnCorners: "tl,tr",
+			*/
+		});
+
+		$('#txturnjs div[data-url]').each(function() {
+			var url = $(this).attr('data-url');
+			var element = $(this);
+			//console.log('url: '+url);
+			if(url) {
+				$.ajax({url: url})
+					.done(function(data) {
+						element.html(data);
+					});
+			}
+		});
+
+		$('#txturnjs').bind('turning', function(e, page) {
+			//console.log('page: '+page);
+			var range = $(this).turn('range', page);
+				//console.log('range: '+range);
+				for (page = range[0]; page<=range[1]; page++) {
+					addPage(page, $(this));
+				}
+		});
+
+		function addPage(page, book) {
+			//console.log('book: '+book.data());
+			//console.log('addPage: '+page);
+			// Check if the page is not in the book
+				if (!book.turn('hasPage', page)) {
+				// Create an element for this page
+				var element = $('<div />').html('Loading...');
+				// Add the page
+				book.turn('addPage', element, page);
+				// Get the data for this page
+				var url = urls[page];
+				//console.log('url: '+url);
+				$.ajax({url: url})
+					.done(function(data) {
+						element.html(data);
+					});
+				}
+			}
+
+	});
+
+	$(window).bind('keydown', function(e){
+
+		if (e.keyCode==37)
+			$('#txturnjs').turn('previous');
+		else if (e.keyCode==39)
+			$('#txturnjs').turn('next');
+
+	});
+]]>
+</script>
