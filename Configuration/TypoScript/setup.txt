@@ -9,7 +9,21 @@ plugin.tx_turnjs {
 		includeJquery = {$plugin.tx_turnjs.settings.includeJquery}
 		includeTurnjs = {$plugin.tx_turnjs.settings.includeTurnjs}
 		includeCss = {$plugin.tx_turnjs.settings.includeCss}
+
+		// options
+		options.display = {$plugin.tx_turnjs.settings.display}
+		options.width = {$plugin.tx_turnjs.settings.width}
+		options.height = {$plugin.tx_turnjs.settings.height}
+		options.duration = {$plugin.tx_turnjs.settings.duration}
+		options.elevation = {$plugin.tx_turnjs.settings.elevation}
+		options.autoCenter = {$plugin.tx_turnjs.settings.autoCenter}
+		options.gradients = {$plugin.tx_turnjs.settings.gradients}
+		options.acceleration = {$plugin.tx_turnjs.settings.acceleration}
+		options.turnCorners = {$plugin.tx_turnjs.settings.turnCorners}
+		options.direction = {$plugin.tx_turnjs.settings.direction}
+
 	}
+
 }
 
 // page type for ajax loading

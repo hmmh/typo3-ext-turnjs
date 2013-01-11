@@ -1,6 +1,7 @@
 ## Define custom categories
 # customsubcategory=settings=Settings
 # customsubcategory=paths=Paths
+# customsubcategory=options=Options
 
 plugin.tx_turnjs {
 	view {
@@ -24,5 +25,27 @@ plugin.tx_turnjs {
 
 		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include CSS
 		includeCss = 1
+
+		## Options see http://turnjs.com/docs/Turn_Options
+		# cat=plugin.tx_turnjs/options; type=string; label=Display (Default value=double):Sets the display mode.Use single to show only one page per view or double to show two pages instead.
+		display =
+		# cat=plugin.tx_turnjs/options; type=string; label=Width: Sets the width of the page.
+		width =
+		# cat=plugin.tx_turnjs/options; type=string; label=Height: Sets the height of the flipbook.
+		height =
+		# cat=plugin.tx_turnjs/options; type=string; label=Duration (Default value=600):Sets the duration of the transition in milliseconds. If you set 0 (zero), there won't be transition while turning the page.
+		duration =
+		# cat=plugin.tx_turnjs/options; type=string; label=Elevation (Default value=0):Sets the elevation of the page during the transition.
+		elevation =
+		# cat=plugin.tx_turnjs/options; type=string; label=AutoCenter (Default value=false): Centers the flipbook depending on how many pages are visible. The autoCenter option changes the CSS margin-left property of the flipbook.
+		autoCenter =
+		# cat=plugin.tx_turnjs/options; type=string; label=Gradients(Default value=true):Shows gradients and shadows during the transition.
+		gradients =
+		# cat=plugin.tx_turnjs/options; type=string; label=Acceleration (Default value=true):Sets the hardware acceleration mode, for touch devices this value must be true.
+		acceleration =
+		# cat=plugin.tx_turnjs/options; type=string; label=TurnCorners (Default value=bl,br):Sets the corners to be used when turning the page from methods like page, next or previous.
+		turnCorners =
+		# cat=plugin.tx_turnjs/options; type=string; label=Direction (Default value=ltr):Specifies the directionality of the flipbook left-to-right (DIR=ltr, the default) or right-to-left (DIR=rtl).
+		direction =
 	}
 }
