@@ -8,6 +8,7 @@ plugin.tx_turnjs {
 		pageType = {$plugin.tx_turnjs.settings.pageType}
 		includeJquery = {$plugin.tx_turnjs.settings.includeJquery}
 		includeTurnjs = {$plugin.tx_turnjs.settings.includeTurnjs}
+		includeHashjs = {$plugin.tx_turnjs.settings.includeHashjs}
 		includeCss = {$plugin.tx_turnjs.settings.includeCss}
 
 		// options

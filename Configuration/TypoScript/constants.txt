@@ -22,6 +22,9 @@ plugin.tx_turnjs {
 
 		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include turn.js
 		includeTurnjs = 1
+		
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include hash.js for hash URLs (#/page/<number>)
+		includeHashjs = 1
 
 		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include CSS
 		includeCss = 1

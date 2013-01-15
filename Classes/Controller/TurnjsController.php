@@ -104,6 +104,13 @@
 					t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
 					'Resources/Public/Scripts/turn.min.js" /></script>');
 		}
+
+		// Include Hash.js
+		if ($this->settings['includeHashjs']) {
+			$this->response->addAdditionalHeaderData('<script type="text/javascript" src="' .
+					t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
+					'Resources/Public/Scripts/hash.js" /></script>');
+		}
 	}
 
 	/**
