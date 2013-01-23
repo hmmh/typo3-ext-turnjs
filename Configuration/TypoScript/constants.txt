@@ -1,54 +1,54 @@
 ## Define custom categories
-# customsubcategory=settings=Settings
-# customsubcategory=paths=Paths
-# customsubcategory=options=Options
+# customsubcategory=settings=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.settings
+# customsubcategory=paths=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.paths
+# customsubcategory=options=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options
 
 plugin.tx_turnjs {
 	view {
-		# cat=plugin.tx_turnjs/paths; type=string; label=Path to template root (FE)
+		# cat=plugin.tx_turnjs/paths; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.paths.templates
 		templateRootPath = EXT:turnjs/Resources/Private/Templates/
-		# cat=plugin.tx_turnjs/paths; type=string; label=Path to template partials (FE)
+		# cat=plugin.tx_turnjs/paths; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.paths.partials
 		partialRootPath = EXT:turnjs/Resources/Private/Partials/
-		# cat=plugin.tx_turnjs/paths; type=string; label=Path to template layouts (FE)
+		# cat=plugin.tx_turnjs/paths; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.paths.layouts
 		layoutRootPath = EXT:turnjs/Resources/Private/Layouts/
 	}
 
 	settings {
-		# cat=plugin.tx_turnjs/settings; type=int+; label= pageType (for ajax loading)
+		# cat=plugin.tx_turnjs/settings; type=int+; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.settings.pagetype
 		pageType = 2000
 
-		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include jQuery
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.settings.incjquery
 		includeJquery = 1
 
-		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include turn.js
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.settings.incturnjs
 		includeTurnjs = 1
-		
-		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include hash.js for hash URLs (#/page/<number>)
+
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.settings.inchashjs
 		includeHashjs = 1
 
-		# cat=plugin.tx_turnjs/settings; type=boolean; label=Include CSS
+		# cat=plugin.tx_turnjs/settings; type=boolean; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.settings.inccss
 		includeCss = 1
 
 		## Options see http://turnjs.com/docs/Turn_Options
-		# cat=plugin.tx_turnjs/options; type=string; label=Display (Default value=double):Sets the display mode.Use single to show only one page per view or double to show two pages instead.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.display
 		display =
-		# cat=plugin.tx_turnjs/options; type=string; label=Width: Sets the width of the page.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.width
 		width =
-		# cat=plugin.tx_turnjs/options; type=string; label=Height: Sets the height of the flipbook.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.height
 		height =
-		# cat=plugin.tx_turnjs/options; type=string; label=Duration (Default value=600):Sets the duration of the transition in milliseconds. If you set 0 (zero), there won't be transition while turning the page.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.duration
 		duration =
-		# cat=plugin.tx_turnjs/options; type=string; label=Elevation (Default value=0):Sets the elevation of the page during the transition.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.elevation
 		elevation =
-		# cat=plugin.tx_turnjs/options; type=string; label=AutoCenter (Default value=false): Centers the flipbook depending on how many pages are visible. The autoCenter option changes the CSS margin-left property of the flipbook.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.autocenter
 		autoCenter =
-		# cat=plugin.tx_turnjs/options; type=string; label=Gradients(Default value=true):Shows gradients and shadows during the transition.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.gradients
 		gradients =
-		# cat=plugin.tx_turnjs/options; type=string; label=Acceleration (Default value=true):Sets the hardware acceleration mode, for touch devices this value must be true.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.acceleration
 		acceleration =
-		# cat=plugin.tx_turnjs/options; type=string; label=TurnCorners (Default value=bl,br):Sets the corners to be used when turning the page from methods like page, next or previous.
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.turncorners
 		turnCorners =
-		# cat=plugin.tx_turnjs/options; type=string; label=Direction (Default value=ltr):Specifies the directionality of the flipbook left-to-right (DIR=ltr, the default) or right-to-left (DIR=rtl).
+		# cat=plugin.tx_turnjs/options; type=string; label=LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:constants.options.direction
 		direction =
 	}
 }

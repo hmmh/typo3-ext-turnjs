@@ -7,23 +7,23 @@
 		<main>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:sheet.main</sheetTitle>
+					<sheetTitle>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:sheet.main</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<settings.flexform.mode>
 						<TCEforms>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.mode</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.mode</label>
 							<onChange>reload</onChange>
 							<config>
 							<type>select</type>
 							<items>
 								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.mode.0</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.mode.0</numIndex>
 									<numIndex index="1">0</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.mode.1</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.mode.1</numIndex>
 									<numIndex index="1">1</numIndex>
 								</numIndex>
 							</items>
@@ -33,7 +33,7 @@
 					<settings.flexform.selectPages>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.selectPages</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.selectPages</label>
 							<displayCond>FIELD:settings.flexform.mode:=:1</displayCond>
 							<config>
 								<type>group</type>
@@ -49,7 +49,7 @@
 					<settings.flexform.startingPoint>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.startingPoint</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.startingPoint</label>
 							<displayCond>FIELD:settings.flexform.mode:=:0</displayCond>
 							<config>
 								<type>group</type>
@@ -64,7 +64,7 @@
 					<settings.flexform.excludeStartingPoint>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.excludeStartingPoint</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.excludeStartingPoint</label>
 							<displayCond>FIELD:settings.flexform.mode:=:0</displayCond>
 							<config>
 								<type>check</type>
@@ -74,7 +74,7 @@
 					<settings.flexform.treelevel>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.treelevel</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.treelevel</label>
 							<displayCond>FIELD:settings.flexform.mode:=:0</displayCond>
 							<config>
 								<type>input</type>
@@ -90,14 +90,14 @@
 		<options>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:sheet.options</sheetTitle>
+					<sheetTitle>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:sheet.options</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<settings.flexform.options.display>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.display</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.display</label>
 							<config>
 								<type>select</type>
 								<items>
@@ -106,11 +106,11 @@
 									<numIndex index="1"></numIndex>
 								</numIndex>
 								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.double</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.double</numIndex>
 									<numIndex index="1">double</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.single</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.single</numIndex>
 									<numIndex index="1">single</numIndex>
 								</numIndex>
 							</items>
@@ -120,7 +120,7 @@
 					<settings.flexform.options.width>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.width</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.width</label>
 							<config>
 								<type>input</type>
 								<checkbox></checkbox>
@@ -132,7 +132,7 @@
 					<settings.flexform.options.height>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.height</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.height</label>
 							<config>
 								<type>input</type>
 								<checkbox></checkbox>
@@ -144,7 +144,7 @@
 					<settings.flexform.options.duration>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.duration</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.duration</label>
 							<config>
 								<type>input</type>
 								<checkbox></checkbox>
@@ -156,7 +156,7 @@
 					<settings.flexform.options.elevation>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.elevation</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.elevation</label>
 							<config>
 								<type>input</type>
 								<checkbox></checkbox>
@@ -168,7 +168,7 @@
 					<settings.flexform.options.autoCenter>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.autoCenter</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.autoCenter</label>
 							<config>
 								<type>select</type>
 								<items>
@@ -177,11 +177,11 @@
 									<numIndex index="1"></numIndex>
 								</numIndex>
 								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.false</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.false</numIndex>
 									<numIndex index="1">false</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.true</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.true</numIndex>
 									<numIndex index="1">true</numIndex>
 								</numIndex>
 								</items>
@@ -191,7 +191,7 @@
 					<settings.flexform.options.gradients>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.gradients</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.gradients</label>
 							<config>
 								<type>select</type>
 								<items>
@@ -200,11 +200,11 @@
 									<numIndex index="1"></numIndex>
 								</numIndex>
 								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.false</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.false</numIndex>
 									<numIndex index="1">false</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.true</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.true</numIndex>
 									<numIndex index="1">true</numIndex>
 								</numIndex>
 								</items>
@@ -214,7 +214,7 @@
 					<settings.flexform.options.acceleration>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.acceleration</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.acceleration</label>
 							<config>
 								<type>select</type>
 								<items>
@@ -223,11 +223,11 @@
 									<numIndex index="1"></numIndex>
 								</numIndex>
 								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.false</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.false</numIndex>
 									<numIndex index="1">false</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.true</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.true</numIndex>
 									<numIndex index="1">true</numIndex>
 								</numIndex>
 								</items>
@@ -237,7 +237,7 @@
 					<settings.flexform.options.turnCorners>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.turnCorners</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.turnCorners</label>
 							<config>
 								<type>input</type>
 								<checkbox></checkbox>
@@ -249,7 +249,7 @@
 					<settings.flexform.options.direction>
 						<TCEforms>
 							<exclude>1</exclude>
-							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.options.direction</label>
+							<label>LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.options.direction</label>
 							<config>
 								<type>select</type>
 								<items>
@@ -258,11 +258,11 @@
 									<numIndex index="1"></numIndex>
 								</numIndex>
 								<numIndex index="1">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.ltr</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.ltr</numIndex>
 									<numIndex index="1">ltr</numIndex>
 								</numIndex>
 								<numIndex index="2">
-									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xml:flexform.rtl</numIndex>
+									<numIndex index="0">LLL:EXT:turnjs/Resources/Private/Language/locallang_db.xlf:flexform.rtl</numIndex>
 									<numIndex index="1">rtl</numIndex>
 								</numIndex>
 								</items>

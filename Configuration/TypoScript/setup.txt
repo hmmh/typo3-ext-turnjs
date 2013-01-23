@@ -22,9 +22,7 @@ plugin.tx_turnjs {
 		options.acceleration = {$plugin.tx_turnjs.settings.acceleration}
 		options.turnCorners = {$plugin.tx_turnjs.settings.turnCorners}
 		options.direction = {$plugin.tx_turnjs.settings.direction}
-
 	}
-
 }
 
 // page type for ajax loading

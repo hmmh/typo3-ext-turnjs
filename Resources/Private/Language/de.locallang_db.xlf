@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-01-23T00:48:11Z" product-name="turnjs">
+		<header/>
+		<body>
+
+			<!-- Flexforms -->
+			<trans-unit id="sheet.main" xml:space="preserve" approved="yes">
+				<source>Main</source>
+				<target>Allgemein</target>
+			</trans-unit>
+			<trans-unit id="flexform.startingPoint" xml:space="preserve" approved="yes">
+				<source>Starting point (default is current page)</source>
+				<target>Startpunkt (Standardwert ist die aktuelle Seite)</target>
+			</trans-unit>
+			<trans-unit id="flexform.excludeStartingPoint" xml:space="preserve" approved="yes">
+				<source>Exclude starting point</source>
+				<target>Startpunkt selbst ausschließen</target>
+			</trans-unit>
+			<trans-unit id="flexform.treelevel" xml:space="preserve" approved="yes">
+				<source>Treelevel (recursion depth)</source>
+				<target>Baumlevel (Rekursionstiefe)</target>
+			</trans-unit>
+			<trans-unit id="flexform.selectPages" xml:space="preserve" approved="yes">
+				<source>Select pages</source>
+				<target>Seiten auswählen</target>
+			</trans-unit>
+			<trans-unit id="flexform.mode" xml:space="preserve" approved="yes">
+				<source>Select mode</source>
+				<target>Modus auswählen</target>
+			</trans-unit>
+			<trans-unit id="flexform.mode.0" xml:space="preserve" approved="yes">
+				<source>Turn subpages</source>
+				<target>Unterseiten</target>
+			</trans-unit>
+			<trans-unit id="flexform.mode.1" xml:space="preserve" approved="yes">
+				<source>Turn selected pages</source>
+				<target>Ausgewählte Seiten</target>
+			</trans-unit>
+			<trans-unit id="sheet.options" xml:space="preserve" approved="yes">
+				<source>Options</source>
+				<target>Optionen</target>
+			</trans-unit>
+			<trans-unit id="flexform.true" xml:space="preserve" approved="yes">
+				<source>true</source>
+				<target>an</target>
+			</trans-unit>
+			<trans-unit id="flexform.false" xml:space="preserve" approved="yes">
+				<source>false</source>
+				<target>aus</target>
+			</trans-unit>
+			<trans-unit id="flexform.double" xml:space="preserve" approved="yes">
+				<source>double</source>
+				<target>Doppelt</target>
+			</trans-unit>
+			<trans-unit id="flexform.single" xml:space="preserve" approved="yes">
+				<source>single</source>
+				<target>Einfach</target>
+			</trans-unit>
+			<trans-unit id="flexform.ltr" xml:space="preserve" approved="yes">
+				<source>left-to-right</source>
+				<target>links-nach-rechts</target>
+			</trans-unit>
+			<trans-unit id="flexform.rtl" xml:space="preserve" approved="yes">
+				<source>right-to-left</source>
+				<target>rechts-nach-links</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.display" xml:space="preserve" approved="yes">
+				<source>Display</source>
+				<target>Anzeige</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.autoCenter" xml:space="preserve" approved="yes">
+				<source>AutoCenter</source>
+				<target>Autom. Zentrierung</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.turnCorners" xml:space="preserve" approved="yes">
+				<source>TurnCorners (possible values: &quot;bl,br&quot; or &quot;tl,tr&quot; or &quot;bl,tr&quot;)</source>
+				<target>Ecken (mögliche Werte: &quot;bl,br&quot; oder &quot;tl,tr&quot; oder &quot;bl,tr&quot;)</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.width" xml:space="preserve" approved="yes">
+				<source>Width (number)</source>
+				<target>Breite (Ziffer)</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.height" xml:space="preserve" approved="yes">
+				<source>Height (number)</source>
+				<target>Höhe (Ziffer)</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.duration" xml:space="preserve" approved="yes">
+				<source>Duration (number)</source>
+				<target>Dauer (Ziffer)</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.direction" xml:space="preserve" approved="yes">
+				<source>Direction</source>
+				<target>Richtung</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.elevation" xml:space="preserve" approved="yes">
+				<source>Elevation (number)</source>
+				<target>Aufriss (Ziffer)</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.gradients" xml:space="preserve" approved="yes">
+				<source>Gradients</source>
+				<target>Verläufe</target>
+			</trans-unit>
+			<trans-unit id="flexform.options.acceleration" xml:space="preserve" approved="yes">
+				<source>Acceleration</source>
+				<target>Hardware-Acceleration</target>
+			</trans-unit>
+
+			<!-- Constants -->
+			<trans-unit id="constants.settings" xml:space="preserve" approved="yes">
+				<source>Settings</source>
+				<target>Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="constants.paths" xml:space="preserve" approved="yes">
+				<source>Paths</source>
+				<target>Pfade</target>
+			</trans-unit>
+			<trans-unit id="constants.options" xml:space="preserve" approved="yes">
+				<source>Options</source>
+				<target>Optionen</target>
+			</trans-unit>
+			<trans-unit id="constants.paths.templates" xml:space="preserve" approved="yes">
+				<source>Path to template root (FE)</source>
+				<target>Pfad zum Template-Verzeichnis (FE)</target>
+			</trans-unit>
+			<trans-unit id="constants.paths.partials" xml:space="preserve" approved="yes">
+				<source>Path to template partials (FE)</source>
+				<target>Pfad zum Partial-Verzeichnis (FE)</target>
+			</trans-unit>
+			<trans-unit id="constants.paths.layouts" xml:space="preserve" approved="yes">
+				<source>Path to template layouts (FE)</source>
+				<target>Pfad zum Layout-Verzeichnis (FE)</target>
+			</trans-unit>
+			<trans-unit id="constants.settings.pagetype" xml:space="preserve" approved="yes">
+				<source>pageType (for ajax loading)</source>
+				<target>Seitentyp (für AJAX)</target>
+			</trans-unit>
+			<trans-unit id="constants.settings.incjquery" xml:space="preserve" approved="yes">
+				<source>Include jQuery</source>
+				<target>jQuery einbinden</target>
+			</trans-unit>
+			<trans-unit id="constants.settings.incturnjs" xml:space="preserve" approved="yes">
+				<source>Include turn.js</source>
+				<target>Turn.js einbinden</target>
+			</trans-unit>
+			<trans-unit id="constants.settings.inchashjs" xml:space="preserve" approved="yes">
+				<source>Include hash.js for hash URLs:Format #/page/&lt;number&gt;</source>
+				<target>Hash.js einbinden für Hash-URLs:Format #/page/&lt;nummer&gt;</target>
+			</trans-unit>
+			<trans-unit id="constants.settings.inccss" xml:space="preserve" approved="yes">
+				<source>Include CSS</source>
+				<target>CSS styles einbinden</target>
+			</trans-unit>
+			<trans-unit id="constants.options.display" xml:space="preserve" approved="yes">
+				<source>Display (Default value=double): Sets the display mode.Use single to show only one page per view or double to show two pages instead.</source>
+				<target>Anzeige (Standardwert=double):Anzeigemodus festlegen. Der Wert "single" zeigt nur eine Seite an, "double" zeigt zwei Seiten an.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.width" xml:space="preserve" approved="yes">
+				<source>Width: Sets the width of the page.</source>
+				<target>Breite: Legt die Breite der Seite fest.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.height" xml:space="preserve" approved="yes">
+				<source>Height: Sets the height of the flipbook.</source>
+				<target>Höhe: Legt die Höhe des Flipbooks fest.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.duration" xml:space="preserve" approved="yes">
+				<source>Duration (Default value=600): Sets the duration of the transition in milliseconds. If you set 0 (zero), there won't be transition while turning the page.</source>
+				<target>Dauer (Standardwert=600): Legt die Länge der Übergänge in Millisekunden fest. Wird 0 (null) gesetzt, gibt es keine Übergänge, wenn die Seiten gewechselt werden.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.elevation" xml:space="preserve" approved="yes">
+				<source>Elevation (Default value=0): Sets the elevation of the page during the transition.</source>
+				<target>Aufriss (Standardwert=0): Legt den Aufriss der Seite während des Übergangs fest (elevation).</target>
+			</trans-unit>
+			<trans-unit id="constants.options.autocenter" xml:space="preserve" approved="yes">
+				<source>AutoCenter (Default value=false): Centers the flipbook depending on how many pages are visible. The autoCenter option changes the CSS margin-left property of the flipbook.</source>
+				<target>Autom. Zentrierung (Standard=false): Zentriert das Flipbook auf Basis der sichtbaren Seiten. Diese Option verändert die margin-left CSS-Eigenschaft des Flipbooks.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.gradients" xml:space="preserve" approved="yes">
+				<source>Gradients (Default value=true): Shows gradients and shadows during the transition.</source>
+				<target>Verläufe (Standardwert=true): Zeigt Verläufe und Schatten während des Übergangs an.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.acceleration" xml:space="preserve" approved="yes">
+				<source>Acceleration (Default value=true): Sets the hardware acceleration mode, for touch devices this value must be true.</source>
+				<target>Hardware-Beschl. (Standardwert=true): Legt den Hardware-Beschleunigungsmodus fest, für Touch-Geräte sollte dieser Wert true sein.</target>
+			</trans-unit>
+			<trans-unit id="constants.options.turncorners" xml:space="preserve" approved="yes">
+				<source>TurnCorners (Default value=bl,br): Sets the corners to be used when turning the page from methods like page, next or previous.</source>
+				<target>Ecken (Standardwert=bl,br): Legt die Ecken fest, welche für das Drehen verwendet werden sollen (bl, br, tl, tr)</target>
+			</trans-unit>
+			<trans-unit id="constants.options.direction" xml:space="preserve" approved="yes">
+				<source>Direction (Default value=ltr): Specifies the directionality of the flipbook left-to-right (DIR=ltr, the default) or right-to-left (DIR=rtl).</source>
+				<target>Richtung (Standardwert=ltr): Legt die Schreibrichtung des Flipbooks fest. Entweder links-nach-rechts (ltr, Standard) oder rechts-nach-links (rtl)</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

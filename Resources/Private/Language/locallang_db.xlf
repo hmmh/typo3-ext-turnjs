@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-01-23T00:48:11Z" product-name="turnjs">
+		<header/>
+		<body>
+
+			<!-- Flexforms -->
+			<trans-unit id="sheet.main" xml:space="preserve">
+				<source>Main</source>
+			</trans-unit>
+			<trans-unit id="flexform.startingPoint" xml:space="preserve">
+				<source>Starting point (default is current page)</source>
+			</trans-unit>
+			<trans-unit id="flexform.excludeStartingPoint" xml:space="preserve">
+				<source>Exclude starting point</source>
+			</trans-unit>
+			<trans-unit id="flexform.treelevel" xml:space="preserve">
+				<source>Treelevel (recursion depth)</source>
+			</trans-unit>
+			<trans-unit id="flexform.selectPages" xml:space="preserve">
+				<source>Select pages</source>
+			</trans-unit>
+			<trans-unit id="flexform.mode" xml:space="preserve">
+				<source>Select mode</source>
+			</trans-unit>
+			<trans-unit id="flexform.mode.0" xml:space="preserve">
+				<source>Turn subpages</source>
+			</trans-unit>
+			<trans-unit id="flexform.mode.1" xml:space="preserve">
+				<source>Turn selected pages</source>
+			</trans-unit>
+			<trans-unit id="sheet.options" xml:space="preserve">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="flexform.true" xml:space="preserve">
+				<source>true</source>
+			</trans-unit>
+			<trans-unit id="flexform.false" xml:space="preserve">
+				<source>false</source>
+			</trans-unit>
+			<trans-unit id="flexform.double" xml:space="preserve">
+				<source>double</source>
+			</trans-unit>
+			<trans-unit id="flexform.single" xml:space="preserve">
+				<source>single</source>
+			</trans-unit>
+			<trans-unit id="flexform.ltr" xml:space="preserve">
+				<source>left-to-right</source>
+			</trans-unit>
+			<trans-unit id="flexform.rtl" xml:space="preserve">
+				<source>right-to-left</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.display" xml:space="preserve">
+				<source>Display</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.autoCenter" xml:space="preserve">
+				<source>AutoCenter</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.turnCorners" xml:space="preserve">
+				<source>TurnCorners (possible values: &quot;bl,br&quot; or &quot;tl,tr&quot; or &quot;bl,tr&quot;)</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.width" xml:space="preserve">
+				<source>Width (number)</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.height" xml:space="preserve">
+				<source>Height (number)</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.duration" xml:space="preserve">
+				<source>Duration (number)</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.direction" xml:space="preserve">
+				<source>Direction</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.elevation" xml:space="preserve">
+				<source>Elevation (number)</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.gradients" xml:space="preserve">
+				<source>Gradients</source>
+			</trans-unit>
+			<trans-unit id="flexform.options.acceleration" xml:space="preserve">
+				<source>Acceleration</source>
+			</trans-unit>
+
+			<!-- Constants -->
+			<trans-unit id="constants.settings" xml:space="preserve">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="constants.paths" xml:space="preserve">
+				<source>Paths</source>
+			</trans-unit>
+			<trans-unit id="constants.options" xml:space="preserve">
+				<source>Options</source>
+			</trans-unit>
+			<trans-unit id="constants.paths.templates" xml:space="preserve">
+				<source>Path to template root (FE)</source>
+			</trans-unit>
+			<trans-unit id="constants.paths.partials" xml:space="preserve">
+				<source>Path to template partials (FE)</source>
+			</trans-unit>
+			<trans-unit id="constants.paths.layouts" xml:space="preserve">
+				<source>Path to template layouts (FE)</source>
+			</trans-unit>
+			<trans-unit id="constants.settings.pagetype" xml:space="preserve">
+				<source>pageType (for ajax loading)</source>
+			</trans-unit>
+			<trans-unit id="constants.settings.incjquery" xml:space="preserve">
+				<source>Include jQuery</source>
+			</trans-unit>
+			<trans-unit id="constants.settings.incturnjs" xml:space="preserve">
+				<source>Include turn.js</source>
+			</trans-unit>
+			<trans-unit id="constants.settings.inchashjs" xml:space="preserve">
+				<source>Include hash.js for hash URLs:Format #/page/&lt;number&gt;</source>
+			</trans-unit>
+			<trans-unit id="constants.settings.inccss" xml:space="preserve">
+				<source>Include CSS</source>
+			</trans-unit>
+			<trans-unit id="constants.options.display" xml:space="preserve">
+				<source>Display (Default value=double): Sets the display mode.Use single to show only one page per view or double to show two pages instead.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.width" xml:space="preserve">
+				<source>Width: Sets the width of the page.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.height" xml:space="preserve">
+				<source>Height: Sets the height of the flipbook.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.duration" xml:space="preserve">
+				<source>Duration (Default value=600): Sets the duration of the transition in milliseconds. If you set 0 (zero), there won't be transition while turning the page.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.elevation" xml:space="preserve">
+				<source>Elevation (Default value=0): Sets the elevation of the page during the transition.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.autocenter" xml:space="preserve">
+				<source>AutoCenter (Default value=false): Centers the flipbook depending on how many pages are visible. The autoCenter option changes the CSS margin-left property of the flipbook.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.gradients" xml:space="preserve">
+				<source>Gradients (Default value=true): Shows gradients and shadows during the transition.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.acceleration" xml:space="preserve">
+				<source>Acceleration (Default value=true): Sets the hardware acceleration mode, for touch devices this value must be true.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.turncorner" xml:space="preserve">
+				<source>TurnCorners (Default value=bl,br): Sets the corners to be used when turning the page from methods like page, next or previous.</source>
+			</trans-unit>
+			<trans-unit id="constants.options.direction" xml:space="preserve">
+				<source>Direction (Default value=ltr): Specifies the directionality of the flipbook left-to-right (DIR=ltr, the default) or right-to-left (DIR=rtl).</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
