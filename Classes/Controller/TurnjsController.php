@@ -30,58 +30,55 @@
  *
  * @package turnjs
  */
-	class Tx_Turnjs_Controller_TurnjsController extends Tx_Extbase_MVC_Controller_ActionController {
+class Tx_Turnjs_Controller_TurnjsController extends Tx_Extbase_MVC_Controller_ActionController {
 
-		/**
-		* t3lib_queryGenerator is needed to recursively fetch a page tree
-		*
-		* @var t3lib_queryGenerator
-		*/
-		protected $queryGenerator;
+	/**
+	* t3lib_queryGenerator is needed to recursively fetch a page tree
+	*
+	* @var t3lib_queryGenerator
+	*/
+	protected $queryGenerator;
 
-		/**
-		* Inject query generator
-		*
-		* @param t3lib_queryGenerator $queryGenerator
+	/**
+	* Inject query generator
+	*
+	* @param t3lib_queryGenerator $queryGenerator
+	* @return void
+	*/
+	public function injectQueryGenerator(t3lib_queryGenerator $queryGenerator) {
+		$this->queryGenerator = $queryGenerator;
+	}
 
-		* @return void
-		*/
-		public function injectQueryGenerator(t3lib_queryGenerator $queryGenerator) {
-			$this->queryGenerator = $queryGenerator;
+	/**
+	 * action index
+	 *
+	 * @return void
+	 */
+	public function indexAction() {
+		$this->mergeTypoScript2FlexForm();
+		$this->addHeaderData();
+
+		switch ($this->settings['mode']) {
+			case 1:
+				$pages = explode(',', $this->settings['selectPages']);
+				break;
+			default:
+				$startingPoint = empty($this->settings['startingPoint'])?$GLOBALS['TSFE']->id:$this->settings['startingPoint'];
+				$pages = $this->queryGenerator->getTreeList($startingPoint, $this->settings['treelevel'], 0, 'doktype = 1');
+				$pages = explode(',', $pages);
 		}
 
-		/**
-		 * action index
-		 *
-		 * @return void
-		 */
-		public function indexAction() {
+		if ($this->settings['excludeStartingPoint']) {
+			array_shift($pages);
+		}
 
-			$this->mergeTypoScript2FlexForm();
-			$this->addHeaderData();
+		$pages1 = array_slice($pages, 0, 2, TRUE);
+		$options = $this->settings['options'];
 
-			switch ($this->settings['mode']) {
-				case 1:
-					$pages = explode(',', $this->settings['selectPages']);
-					break;
-				default:
-					$startingPoint = empty($this->settings['startingPoint'])?$GLOBALS['TSFE']->id:$this->settings['startingPoint'];
-					$pages = $this->queryGenerator->getTreeList($startingPoint, $this->settings['treelevel'], 0, 'doktype = 1');
-					$pages = explode(',', $pages);
-			}
-
-			if ($this->settings['excludeStartingPoint']) {
-				array_shift($pages);
-			}
-
-			$pages1 = array_slice($pages, 0, 2, TRUE);
-			$options = $this->settings['options'];
-
-			$this->view->assign('pages', $pages);
-			$this->view->assign('pages1', $pages1);
-			$this->view->assign('count', count($pages));
-			$this->view->assign('options', $options);
-
+		$this->view->assign('pages', $pages);
+		$this->view->assign('pages1', $pages1);
+		$this->view->assign('count', count($pages));
+		$this->view->assign('options', $options);
 	}
 
 
@@ -90,26 +87,26 @@
 	 *
 	 * @return void
 	 */
-	protected  function addHeaderData() {
+	protected function addHeaderData() {
 		// Include jQuery
 		if ($this->settings['includeJquery']) {
 			$this->response->addAdditionalHeaderData('<script type="text/javascript" src="' .
-					t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
-					'Resources/Public/Scripts/jquery-1.7.1.min.js"></script>');
+				t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
+				'Resources/Public/Scripts/jquery-1.7.1.min.js"></script>');
 		}
 
 		// Include Turn.js
 		if ($this->settings['includeTurnjs']) {
 			$this->response->addAdditionalHeaderData('<script type="text/javascript" src="' .
-					t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
-					'Resources/Public/Scripts/turn.min.js" /></script>');
+				t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
+				'Resources/Public/Scripts/turn.min.js" /></script>');
 		}
 
 		// Include Hash.js
 		if ($this->settings['includeHashjs']) {
 			$this->response->addAdditionalHeaderData('<script type="text/javascript" src="' .
-					t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
-					'Resources/Public/Scripts/hash.js" /></script>');
+				t3lib_extMgm::siteRelPath($this->request->getControllerExtensionKey()) .
+				'Resources/Public/Scripts/hash.js" /></script>');
 		}
 	}
 
@@ -118,7 +115,7 @@
 	 *
 	 * @return	void
 	 */
-	protected  function mergeTypoScript2FlexForm() {
+	protected function mergeTypoScript2FlexForm() {
 		$tmpSettings = $this->settings;
 		if (isset($this->settings['flexform']) && is_array($this->settings['flexform'])) {
 			$this->mergeArray($this->settings['flexform'], $tmpSettings);
