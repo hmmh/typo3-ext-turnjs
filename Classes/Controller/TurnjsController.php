@@ -63,8 +63,9 @@ class Tx_Turnjs_Controller_TurnjsController extends Tx_Extbase_MVC_Controller_Ac
 				$pages = explode(',', $this->settings['selectPages']);
 				break;
 			default:
-				$startingPoint = empty($this->settings['startingPoint'])?$GLOBALS['TSFE']->id:$this->settings['startingPoint'];
-				$pages = $this->queryGenerator->getTreeList($startingPoint, $this->settings['treelevel'], 0, 'doktype = 1');
+				$id = empty($this->settings['startingPoint'])?$GLOBALS['TSFE']->id:$this->settings['startingPoint'];
+				$conditions = 'doktype = 1 AND hidden = 0';
+				$pages = $this->queryGenerator->getTreeList($id, $this->settings['treelevel'], 0, $conditions);
 				$pages = explode(',', $pages);
 		}
 
