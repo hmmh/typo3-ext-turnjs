@@ -73,7 +73,7 @@ class Tx_Turnjs_Controller_TurnjsController extends Tx_Extbase_MVC_Controller_Ac
 		}
 
 		$pages1 = array_slice($pages, 0, 2, TRUE);
-		$options = $this->settings['options'];
+		$options = array_filter($this->settings['options'], 'strlen');
 
 		$this->view->assign('pages', $pages);
 		$this->view->assign('pages1', $pages1);
